@@ -3,7 +3,7 @@
 ; Non-commercial use only
 
 #define MyAppName "Railway Operation Simulator"
-#define MyAppVersion "2.23.3"
+#define MyAppVersion "2.23.4"
 #define MyAppPublisher "Railway Operation Simulator"
 #define MyAppURL "https://www.railwayoperationsimulator.com/"
 #define MyAppExeName "RailOS64.exe"
@@ -30,7 +30,7 @@ ArchitecturesAllowed=x64compatible
 ; the 64-bit view of the registry.
 ArchitecturesInstallIn64BitMode=x64compatible
 DisableProgramGroupPage=yes
-LicenseFile=RailOS64-v2.23.3\Railway\GNU General Public License v3.txt
+LicenseFile=RailOS64-v{#MyAppVersion}\Railway\GNU General Public License v3.txt
 ; Uncomment the following line to run in non administrative install mode (install for current user only).
 PrivilegesRequired=lowest
 PrivilegesRequiredOverridesAllowed=commandline
@@ -47,7 +47,7 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "RailOS64-v2.23.3\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "RailOS64-v{#MyAppVersion}\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]

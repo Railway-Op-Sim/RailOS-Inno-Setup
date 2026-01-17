@@ -3,7 +3,7 @@
 ; Non-commercial use only
 
 #define MyAppName "Railway Operation Simulator"
-#define MyAppVersion "2.23.3"
+#define MyAppVersion "2.23.4"
 #define MyAppPublisher "Railway Operation Simulator"
 #define MyAppURL "https://www.railwayoperationsimulator.com/"
 #define MyAppExeName "RailOS32.exe"
@@ -22,7 +22,7 @@ AppUpdatesURL={#MyAppURL}
 DefaultDirName={autopf}\{#MyAppName}
 UninstallDisplayIcon={app}\Railway\{#MyAppExeName}
 DisableProgramGroupPage=yes
-LicenseFile=RailOS32-v2.23.3\Railway\GNU General Public License v3.txt
+LicenseFile=RailOS32-v{#MyAppVersion}\Railway\GNU General Public License v3.txt
 ; Remove the following line to run in administrative install mode (install for all users).
 PrivilegesRequired=lowest
 OutputDir=RailOS Setup
@@ -38,7 +38,7 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "RailOS32-v2.23.3\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "RailOS32-v{#MyAppVersion}\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
